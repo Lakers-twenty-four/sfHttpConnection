@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.httpconnection.MainActivity">
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入快递单号"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_ems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMS" />
+
+        <RadioButton
+            android:id="@+id/rb_sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顺丰" />
+
+        <RadioButton
+            android:id="@+id/rb_sto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申通" />
+
+        <RadioButton
+            android:id="@+id/rb_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动匹配" />
+    </RadioGroup>
+
+    <Button
+        android:onClick="refer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="快递物流信息"/>
+
+    </ScrollView>
+</LinearLayout>
